@@ -11,7 +11,7 @@ object Main extends ServerApp {
 
   val helloWorldService = HttpService {
     case GET -> Root =>
-      Ok("Hello, world.")
+      Ok("Hello, world!")
   }
 
   override def server(args: List[String]): Task[Server] = {
