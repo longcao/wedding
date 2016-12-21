@@ -16,7 +16,7 @@ object Main extends ServerApp {
 
   override def server(args: List[String]): Task[Server] = {
     BlazeBuilder
-      .bindLocal(5000)
+      .bindHttp(5000, "0.0.0.0")
       .mountService(helloWorldService, "/")
       .start
   }

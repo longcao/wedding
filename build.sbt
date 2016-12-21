@@ -10,6 +10,8 @@ enablePlugins(JavaAppPackaging)
 
 cancelable in Global := true
 
+fork in run := true
+
 val http4sVersion = "0.15.0a"
 
 libraryDependencies ++= Seq(
