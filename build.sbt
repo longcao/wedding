@@ -18,6 +18,9 @@ val http4sVersion = "0.15.0a"
 libraryDependencies ++= Seq(
   "org.http4s" %% "http4s-dsl"          % http4sVersion,
   "org.http4s" %% "http4s-blaze-server" % http4sVersion,
-  "org.http4s" %% "http4s-twirl"        % http4sVersion
+  "org.http4s" %% "http4s-twirl"        % http4sVersion,
+  "ch.qos.logback" % "logback-classic" % "1.1.8",
+
+  "org.webjars.bower" % "bulma" % "0.2.3"
 )
 

@@ -1,23 +1,39 @@
 package wedding
 
-import org.http4s.HttpService
 import org.http4s.dsl._
+import org.http4s.HttpService
 import org.http4s.server.blaze.BlazeBuilder
+import org.http4s.server.staticcontent._
 import org.http4s.server.{ Server, ServerApp }
+import org.http4s.twirl._
 
 import scalaz.concurrent.Task
 
 object Main extends ServerApp {
 
-  val helloWorldService = HttpService {
+  val webService = HttpService {
     case GET -> Root =>
-      Ok("WE GETTING MARRIED 10/14/2017\n\nIT'S LIT")
+      Ok(html.index())
   }
+
+  val cache = MemoryCache()
+
+  val assetService = resourceService(ResourceService.Config(
+    basePath = "/assets",
+    pathPrefix = "/assets",
+    cacheStrategy = cache))
+
+  val webJarService = resourceService(ResourceService.Config(
+    basePath = "/META-INF/resources/webjars",
+    pathPrefix = "/assets",
+    cacheStrategy = cache))
 
   override def server(args: List[String]): Task[Server] = {
     BlazeBuilder
       .bindHttp(5000, "0.0.0.0")
-      .mountService(helloWorldService, "/")
+      .mountService(webService, "/")
+      .mountService(assetService)
+      .mountService(webJarService)
       .start
   }
 }
