@@ -12,8 +12,8 @@ import scalaz.concurrent.Task
 object Main extends ServerApp {
 
   val webService = HttpService {
-    case GET -> Root =>
-      Ok(html.index())
+    case GET -> Root                    => Ok(html.index())
+    case GET -> Root / "groomsmen"      => Ok(html.groomsmen())
   }
 
   val cache = MemoryCache()

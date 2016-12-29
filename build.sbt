@@ -21,6 +21,8 @@ libraryDependencies ++= Seq(
   "org.http4s" %% "http4s-twirl"        % http4sVersion,
   "ch.qos.logback" % "logback-classic" % "1.1.8",
 
+  "org.webjars.bower" % "font-awesome" % "4.7.0",
+  "org.webjars.npm" % "balloon-css" % "0.3.0",
   "org.webjars.bower" % "bulma" % "0.2.3"
 )
 

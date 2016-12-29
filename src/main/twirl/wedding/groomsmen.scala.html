@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>IT'S LIT</title>
+
+  <meta name="theme-color" content="#000000">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/bulma/0.2.3/css/bulma.css">
+  <link rel="stylesheet" href="assets/balloon-css/0.3.0/balloon.min.css">
+  <link rel="stylesheet" href="assets/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- GA -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89341286-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <section class="hero is-fullheight background-black">
+
+    <!-- Title -->
+    <h1 class="title is-1 has-text-centered color-white margin-vertical-30px">Be my groomsmen?</h1>
+
+    <!-- Portraits -->
+    <div class="hero-body columns">
+      <div class="column"></div>
+      @List(
+        ("jason", "Jason Chang"),
+        ("zach", "Zachary Chetchavat"),
+        ("leeron", "Leeron Tan"),
+        ("phil", "Phil Vuong"),
+        ("caleb", "Caleb Li"),
+        ("felix", "Felix Tang")).map { case (firstName, fullName) =>
+        <div class="image column" data-balloon="@fullName" data-balloon-pos="down">
+          <img src="assets/images/heads/head-@{firstName}.png" alt="@fullName" title="@fullName">
+        </div>
+      }
+      <div class="column"></div>
+    </div>
+
+    <!-- Spotify -->
+    <i class="title is-3 fa fa-music color-white margin-vertical-30px" aria-hidden="true"></i>
+    <h1 class="title is-3 has-text-centered color-white margin-vertical-30px">Posse cuts for the posse.</h1>
+    <div class="container center margin-vertical-30px">
+      <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Alongcao%3Aplaylist%3A3HQOWObvQJKgE51hYtsk1a" width="250" height="300" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+
+  </section>
+</body>
+</html>
+
