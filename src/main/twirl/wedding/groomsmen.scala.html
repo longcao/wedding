@@ -35,20 +35,24 @@
     <h1 class="title is-1 has-text-centered color-white margin-vertical-30px">Be my groomsmen?</h1>
 
     <!-- Portraits -->
-    <div class="hero-body columns">
-      <div class="column"></div>
-      @List(
-        ("jason", "Jason Chang"),
-        ("zach", "Zachary Chetchavat"),
-        ("leeron", "Leeron Tan"),
-        ("phil", "Phil Vuong"),
-        ("caleb", "Caleb Li"),
-        ("felix", "Felix Tang")).map { case (firstName, fullName) =>
-        <div class="image column" data-balloon="@fullName" data-balloon-pos="down">
-          <img src="assets/images/heads/head-@{firstName}.png" alt="@fullName" title="@fullName">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column"></div>
+          @List(
+            ("jason", "Jason Chang"),
+            ("zach", "Zachary Chetchavat"),
+            ("leeron", "Leeron Tan"),
+            ("phil", "Phil Vuong"),
+            ("caleb", "Caleb Li"),
+            ("felix", "Felix Tang")).map { case (firstName, fullName) =>
+            <div class="image column" data-balloon="@fullName" data-balloon-pos="down">
+              <img src="assets/images/heads/head-@{firstName}.png" alt="@fullName" title="@fullName">
+            </div>
+          }
+          <div class="column"></div>
         </div>
-      }
-      <div class="column"></div>
+      </div>
     </div>
 
     <!-- Spotify -->

@@ -1,5 +1,7 @@
-.vertical-line-black {
-  border-left: thick solid black;
+@media screen and (min-width: 769px) {
+  .vertical-line-black {
+    border-left: thick solid black;
+  }
 }
 
 .margin-vertical-30px {
