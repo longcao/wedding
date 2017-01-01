@@ -1,4 +1,4 @@
-@media (min-width: 769px) and (min-device-width: 769px) {
+@media (min-width: 769px) {
   .vertical-line-black {
     border-left: thick solid black;
   }
