@@ -51,3 +51,9 @@ h4 {
   font-size: 14px;
   letter-spacing: 0.00025em;
 }
+
+.vertically-aligned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
