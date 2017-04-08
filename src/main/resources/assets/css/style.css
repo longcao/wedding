@@ -21,3 +21,33 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+h1 {
+  font-family: "Chronicle Hairline A", "Chronicle Hairline B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Chronicle Hairline A", "Chronicle Hairline B";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.00025em;
+}
+
+h4 {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.00025em;
+}
