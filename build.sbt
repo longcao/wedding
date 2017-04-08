@@ -13,7 +13,7 @@ cancelable in Global := true
 
 fork in run := true
 
-val http4sVersion = "0.15.0a"
+val http4sVersion = "0.15.8"
 
 libraryDependencies ++= Seq(
   "org.http4s" %% "http4s-dsl"          % http4sVersion,
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "1.1.8",
 
   "org.webjars.bower" % "font-awesome" % "4.7.0",
-  "org.webjars.npm" % "balloon-css" % "0.3.0",
-  "org.webjars.bower" % "bulma" % "0.2.3"
+  "org.webjars.npm" % "balloon-css" % "0.4.0",
+  "org.webjars.npm" % "bulma" % "0.4.0"
 )
 
