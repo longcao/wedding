@@ -77,3 +77,11 @@ h4 {
   width: 100% !important;
   height: 100% !important;
 }
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
