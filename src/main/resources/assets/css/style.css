@@ -38,18 +38,20 @@ h2 {
 
 h3 {
   font-family: "Whitney SSm A", "Whitney SSm B";
+  font-variant: small-caps;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: 0.00025em;
+  letter-spacing: 0.25em;
 }
 
 h4 {
   font-family: "Whitney SSm A", "Whitney SSm B";
+  font-variant: small-caps;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 0.00025em;
+  letter-spacing: 0.25em;
 }
 
 .vertically-aligned {
