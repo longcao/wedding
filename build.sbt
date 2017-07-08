@@ -23,6 +23,6 @@ libraryDependencies ++= Seq(
 
   "org.webjars.bower" % "font-awesome" % "4.7.0",
   "org.webjars.npm" % "balloon-css" % "0.4.0",
-  "org.webjars.npm" % "bulma" % "0.4.0"
+  "org.webjars.npm" % "bulma" % "0.4.2"
 )
 
