@@ -7,7 +7,7 @@ import org.http4s.server.staticcontent._
 import org.http4s.server.{ Server, ServerApp }
 import org.http4s.twirl._
 
-import scalaz.concurrent.Task
+import fs2.Task
 
 object Main extends ServerApp {
 

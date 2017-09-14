@@ -13,7 +13,7 @@ cancelable in Global := true
 
 fork in run := true
 
-val http4sVersion = "0.15.8"
+val http4sVersion = "0.17.0"
 
 libraryDependencies ++= Seq(
   "org.http4s" %% "http4s-dsl"          % http4sVersion,
